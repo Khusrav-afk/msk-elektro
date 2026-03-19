@@ -23,7 +23,7 @@ header{
   display:flex;align-items:center;justify-content:space-between;height:70px;
 }
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
-.logo img{height:72px;width:auto;filter:drop-shadow(0 0 8px rgba(245,166,35,.4));}
+.logo img{height:72px;width:auto;filter:sepia(1) saturate(4) hue-rotate(5deg) brightness(1.1) drop-shadow(0 0 8px rgba(245,166,35,.5));mix-blend-mode:normal;background:transparent;}
 .logo-text .brand{font-family:'Oswald',sans-serif;font-size:20px;font-weight:700;color:#fff;letter-spacing:1px;}
 .logo-text .sub{font-size:10px;color:#7a9acc;letter-spacing:.5px;}
 nav{display:flex;gap:24px;align-items:center;}
@@ -59,7 +59,7 @@ nav a:hover{color:var(--acc);border-bottom-color:var(--acc);}
 /* Lightning decoration */
 #hero::after{
   content:'⚡';font-size:420px;position:absolute;right:-60px;top:50%;
-  transform:translateY(-50%);opacity:.04;pointer-events:none;
+  transform:translateY(-50%);opacity:.06;pointer-events:none;
   filter:blur(2px);
 }
 .hero-inner{max-width:1280px;margin:0 auto;width:100%;position:relative;z-index:1;}
@@ -71,6 +71,7 @@ nav a:hover{color:var(--acc);border-bottom-color:var(--acc);}
   animation:fadeUp .7s ease both;
 }
 .hero-badge::before{content:'';width:6px;height:6px;background:var(--acc);border-radius:50%;animation:blink 1.5s infinite;}
+.hero-badge-bolt{width:14px;height:14px;display:inline-block;vertical-align:middle;margin-top:-2px;filter:drop-shadow(0 0 4px rgba(245,166,35,.8));}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
 h1{
   font-family:'Oswald',sans-serif;font-size:clamp(34px,5.5vw,68px);
@@ -223,7 +224,7 @@ tbody td:last-child{font-weight:600;color:var(--blue2);}
 #advantages .sec-label{color:var(--acc);}
 #advantages h2{color:#fff;}
 #advantages h2 .acc{color:var(--acc);}
-.adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;}
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:900px;margin:0 auto;}
 .adv-item{
   text-align:center;padding:36px 22px;
   border:1px solid rgba(255,255,255,.07);border-radius:14px;
@@ -369,7 +370,7 @@ footer a:hover{color:var(--acc);}
 }
 @media(max-width:580px){
   .services-grid{grid-template-columns:1fr;}
-  .adv-grid{grid-template-columns:1fr 1fr;}
+  .adv-grid{grid-template-columns:1fr 1fr;max-width:100%;}
   .hero-btns{flex-direction:column;}
   .hero-cards{flex-direction:column;}
   .hero-card{min-width:auto;}
@@ -571,7 +572,7 @@ footer a:hover{color:var(--acc);}
   h2{font-size:clamp(22px,4vw,36px);}
   section{padding:60px 16px;}
   .services-grid{grid-template-columns:repeat(2,1fr);}
-  .adv-grid{grid-template-columns:1fr 1fr;}
+  .adv-grid{grid-template-columns:repeat(3,1fr);max-width:860px;}
   .about-grid,.legal-grid,.compare-grid{grid-template-columns:1fr;}
   .contact-grid{grid-template-columns:1fr !important;}
   .contact-grid > div:last-child{min-height:280px;}
@@ -640,7 +641,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
   #stats { padding: 44px 14px; }
   .services-grid { grid-template-columns: 1fr 1fr !important; gap: 8px; }
   .card { padding: 18px 14px; }
-  .adv-grid { grid-template-columns: 1fr !important; }
+  .adv-grid { grid-template-columns: 1fr !important; max-width: 100%; }
   .cmp-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   nav { top: 60px; }
   .header-inner { height: 60px; }
