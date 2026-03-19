@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>МСК-ЭЛЕКТРО — Техобслуживание электроустановок Выселковский район</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#hero" class="logo">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAICAgICAQICAgIDAgIDAwYEAwMDAwcFBQQGCAcJCAgHCAgJCg0LCQoMCggICw8LDA0ODg8OCQsQERAOEQ0ODg7/2wBDAQIDAwMDAwcEBAcOCQgJDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAFAAUADASEAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9+h+lLigAwKMCgBMcUuBQAY6UYoAWigBKMUALRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAmKMUAGBRgZoAMCjFAC0mOKAGjrT6ACkxQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGDrT6ACigAooAKKACkz6UALRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFADB96n0AFFABRQAUUAHWigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg60+gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAYOtPoAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAGDrT6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg+9T6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBo606gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAaMbqdQAUUAFFABRQAUUAFFABRQAUnegBaKAOM1r4jfD7w14gbSfEfjvw7oGqLGsrWepa3b28wRs7WKO4bBwcHGDg1lf8AC5PhF/0VTwf/AOFNaf8Axyu2ODxc4qUacmn2TPPnjsFTk4yqxTXS6D/hcnwi/wCiqeD/APwprT/45Sf8Lk+EX/RVPB//AIU1p/8AHKr6jjf+fUv/AAF/5Ef2jgP+fsfvQf8AC5PhFj/kqng//wAKa0/+OUf8Lk+EP/RVfB//AIU1p/8AHKf1HHf8+pf+Av8AyD+0cB/z+j/4Eg/4XJ8Iv+iqeD//AAprT/45QfjL8IR/zVXwcP8AuZrT/wCOUvqON/59S/8AAX/kP+0cB/z9j96NvQfiB4E8U6w+neGPGugeI79ITM9tpesQXMqxggFysbEhQWUZ6ZI9a66uWpTqUpctSLT7NWO2nVpVoc9OSku61CisjUKKACigAooAKKACigBo606gAooAKKACigAooAKKACigBMfNmloAKgnmhtrKa4uJVhgiQvLI5wqKBkknsABRZvRCbUVdn8uPxn+ISfGf9q7x78UbiOK7tde1Rm0dpUWTy9NhHk2SqSuQrQos23s88nrXmf2Ky/58bb/wHT/Cv66wdBYbCU6K+zFL7kfyZi6zxGKqVn9qTf3sPsVj/wA+Nt/4Dp/hR9isv+fG2/8AAdP8K7jlbD7FZf8APjbf+A6f4UhsbL/nxtv/AAHT/ClYSdgFlZZz9htv/AdP8KsW2kR3uo21lYaKuo39zPHb2lnaWaPNczSOEjijXA3O7sqqMjLMOlJuMU5S2Q4qTlaO7P6Gv2PP2Y7D9nf4BtLq9pYyfFDxEkc/ie9tFDJbhQTFYQvgZih3N82B5kjSSYXcFX7Ar+T80xjzDMKmJf2np6bL8D+q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AJ9DXwd/wUH+MMnw5/Yom8GaNfNaeLPiBM+jW7wuyyW9gF3X84KkFT5J8lXH3ZLiM17mTYb63mtGk9nJX9Fq/wAjw85xH1XK61XqotL1en6n42/Bz4OeOPjp8YrfwT4BsIzcKI5dV1O4Q/YdEtWLAXE+CCR8jiOFSGlZdoKKJJY/6Kfgt8GPBnwJ+Bmn+BfBVq4t42M+o6jdbWu9UumAElzOwABdsAAABUVVRAqKqj9E42zPmlDAU3t70vXov1+4/PuC8t5Yzx01v7sf1f6feetjpRX4+fronOaWgANIOtAC0UAJS0AFIKAFooAKKACigAooAKKACigAooAKKACigAooAKKACigA7V+A3xoufGn7aP8AwVj1fwr8NYk1DTNE36HpN/cKzWOlafbzFb3U5yApCS3KyKqBsziC3CEDe6ffcKezoYqtjqvw0YN/N6I+B4q9pXw1HBUviqzS+SP2W+B3wQ8FfAP4GWfgnwbbvJl/tOr6tdBTeavdlQr3M7KACxCqqqAERFRECqqgex18ZisTUxeInXqfFJ3Z9nhcPTwmHhQp7RVgorkOsKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAEpaAPCP2idd8bWX7OeoeFvhdb/AGn4p+LmOh+GGZisVhLMpE2oTMPuQ20PmTM3cokahnkRWg/Zz/Z78G/s4/s+2PgvwtGLzUZFjk1zW5Ygs+p3CoEDN12xoo2Rx5IRABkksze0sT7HK3h4vWpK8vSOiX33fyPEeH9tmiryWlONl6y1b+6y+Z79RXinth3ooAKKACigAooAKKACigAooAKKACigAooAKO1ADR1p1ABRQAUUAFFABRQAUUAGKTPrQBXa1t31SO9aBGu44nijmK5dEYqWUHsCUQkd9o9BVnvTu2KyQUUhhRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGjrTqACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBo606gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAYOtPoAQ0vagAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg69afQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAMHWn0AFJQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAMHUU+gApBQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGD71PoAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAGDrT6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg607IAoAM0ZoAM0ZoAM0o6UAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAE4FJmgAzRn8KADIozQAZozQAZHrRnigD//2Q==" alt="МСК-ЭЛЕКТРО логотип"/>
+      <div class="logo-text">
+        <div class="brand">МСК-ЭЛЕКТРО</div>
+        <div class="sub">ст-ца Выселки, Краснодарский край</div>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="#about" onclick="closeNav()">О компании</a>
+      <a href="#services" onclick="closeNav()">Услуги</a>
+      <a href="#advantages" onclick="closeNav()">Преимущества</a>
+      <a href="#legal" onclick="closeNav()">Нормативная база</a>
+      <a href="#contact" onclick="closeNav()">Контакты и заявка</a>
+    </nav>
+    <button class="btn btn-acc" onclick="openModal()" style="padding:10px 20px;font-size:13.5px;">📞 Заказать звонок</button>
+    <button class="burger" id="burger-btn" onclick="toggleNav()" aria-label="Меню">
+      <span id="b1"></span><span id="b2"></span><span id="b3"></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">⚡ Аутсорсинг электрохозяйства — Выселковский район</div>
+    <h1>Техническое обслуживание<br/><em>электроустановок</em><br/>под ключ</h1>
+    <p class="hero-sub">Абонентское обслуживание для организаций и учреждений. Функции ответственного за электрохозяйство — экономично, профессионально, на 100% законно.</p>
+    <div class="hero-btns">
+      <button class="btn btn-acc" onclick="openModal()">📞 Получить коммерческое предложение</button>
+      <a href="#services" class="btn btn-outline">Смотреть услуги →</a>
+    </div>
+    <div class="hero-cards">
+      <div class="hero-card">
+        <span class="hc-icon">🕐</span>
+        <div><div class="hc-num">24/7</div><div class="hc-label">Аварийные выезды</div></div>
+      </div>
+      <div class="hero-card">
+        <span class="hc-icon">⚖️</span>
+        <div><div class="hc-num">100%</div><div class="hc-label">Законность по ПТЭЭП</div></div>
+      </div>
+      <div class="hero-card">
+        <span class="hc-icon">💰</span>
+        <div><div class="hc-num">−30%</div><div class="hc-label">Экономия бюджета</div></div>
+      </div>
+      <div class="hero-card">
+        <span class="hc-icon">📋</span>
+        <div><div class="hc-num">4 группа</div><div class="hc-label">Допуск по электробезоп.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="section-line reveal"></div>
+        <div class="sec-label reveal">О компании</div>
+        <h2 class="reveal "reveal">Ваш надёжный партнёр по <span class="acc">энергоснабжению</span></h2>
+        <p class="about-desc reveal">ООО «МСК-ЭЛЕКТРО» специализируется на техническом обслуживании электроустановок любой сложности. Мы берём на себя все функции по эксплуатации электросетей вашего объекта.</p>
+        <p class="about-desc reveal" style="transition-delay:.1s;">Работаем с бюджетными учреждениями, коммерческими организациями, гостиницами, торговыми центрами и производственными помещениями Выселковского района.</p>
+        <div class="perks reveal-group">
+          <div class="perk"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><div><div class="pt">Экономия средств</div><div class="pd">Абонентская плата ниже зарплаты штатного электрика с учётом налогов и отпускных.</div></div></div>
+          <div class="perk"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></span><div><div class="pt">Профессионализм</div><div class="pd">Аттестованные специалисты с допуском по электробезопасности для любых работ.</div></div></div>
+          <div class="perk"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><div><div class="pt">Оперативность</div><div class="pd">Срочные выезды на аварии по всему Выселковскому району в кратчайшие сроки.</div></div></div>
+          <div class="perk"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><div><div class="pt">Полная документация</div><div class="pd">Ведение и актуализация всей исполнительной документации по нормативам.</div></div></div>
+        </div>
+      </div>
+      <div class="about-visual-side reveal from-right">
+        <div class="about-stat-grid">
+          <div class="about-stat-card accent-card">
+            <div class="asc-icon">💰</div>
+            <div class="asc-num">−30%</div>
+            <div class="asc-label">Экономия по сравнению<br/>со штатным электриком</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="asc-icon">🕐</div>
+            <div class="asc-num">24/7</div>
+            <div class="asc-label">Аварийные выезды<br/>без выходных</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="asc-icon">📋</div>
+            <div class="asc-num">100%</div>
+            <div class="asc-label">Соответствие<br/>требованиям ПТЭЭП</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="asc-icon">⚡</div>
+            <div class="asc-num">4 гр.</div>
+            <div class="asc-label">Группа допуска<br/>по электробезопасности</div>
+          </div>
+        </div>
+        <div class="about-banner reveal">
+          <div class="ab-left">
+            <div class="ab-title">Один договор —<br/>все вопросы решены</div>
+            <div class="ab-sub">ИНН: 2360014010 · ОГРН: 1212300058354</div>
+          </div>
+          <div class="ab-right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-line reveal"></div>
+    <div class="sec-label reveal">Что мы делаем</div>
+    <h2 class="reveal">Наши <span class="acc">услуги</span></h2>
+    <div class="services-grid reveal-group">
+      <div class="card">
+        <span class="card-num">01</span>
+        <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+        <div class="card-title">Техническое обслуживание</div>
+        <div class="card-line"></div>
+        <div class="card-desc">Непосредственное техническое обслуживание электроустановок и электрощитов. Поддержание работоспособности ТП, ВЛ-0,4 кВ и уличного освещения.</div>
+      </div>
+      <div class="card">
+        <span class="card-num">02</span>
+        <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3L2 6"/><path d="M22 6l-3-3"/></svg></span>
+        <div class="card-title">Аварийное обслуживание</div>
+        <div class="card-line"></div>
+        <div class="card-desc">Срочные выезды на объекты в случае аварийных ситуаций. Оперативное устранение нарушений в работе систем электроснабжения по всему Выселковскому району.</div>
+      </div>
+      <div class="card">
+        <span class="card-num">03</span>
+        <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12l-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/><path d="M17.64 15L22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg></span>
+        <div class="card-title">Ремонт и замена</div>
+        <div class="card-line"></div>
+        <div class="card-desc">Поддержание светильников в рабочем состоянии, замена ламп, ремонт осветительных приборов. Замена неисправных выключателей и розеток.</div>
+      </div>
+      <div class="card">
+        <span class="card-num">04</span>
+        <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/><circle cx="8" cy="16" r="2"/></svg></span>
+        <div class="card-title">Аренда КБУ с люлькой</div>
+        <div class="card-line"></div>
+        <div class="card-desc">Бурение отверстий Ø200–450 мм под сваи, столбы и коммуникации. Глубина до 5 м. Работаем с люлькой на вылете стрелы до 12 м.</div>
+      </div>
+      <div class="card">
+        <span class="card-num">05</span>
+        <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+        <div class="card-title">Документация и отчётность</div>
+        <div class="card-line"></div>
+        <div class="card-desc">Ведение, хранение и изменение исполнительной документации на электроустановку в соответствии с требованиями нормативных документов.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="section-line reveal"></div>
+    <div class="sec-label reveal">Цифры</div>
+    <h2 class="reveal">МСК-ЭЛЕКТРО в <span class="acc">цифрах</span></h2>
+    <div class="stats-grid reveal-group">
+      <div class="stat-item">
+        <div class="stat-num" data-target="24">0</div>
+        <div class="stat-label">Часа в сутки<br/>на связи</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="100" data-suffix="%">0</div>
+        <div class="stat-label">Соответствие<br/>законодательству РФ</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="4">0</div>
+        <div class="stat-label">Группа допуска<br/>по электробезопасности</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="30" data-suffix="%">0</div>
+        <div class="stat-label">Экономия vs<br/>штатный электрик</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section id="compare">
+  <div class="container">
+    <div class="section-line reveal"></div>
+    <div class="sec-label reveal">Выгода</div>
+    <h2 class="reveal">Аутсорсинг vs <span class="acc">Штатный сотрудник</span></h2>
+
+    <div class="cmp-wrap reveal">
+      <!-- HEADER -->
+      <div class="cmp-header-row">
+        <div class="cmp-col-param">Параметр сравнения</div>
+        <div class="cmp-col cmp-col-bad">
+          <div class="cmp-col-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="cmp-col-title">Штатный<br/>электрик</div>
+        </div>
+        <div class="cmp-col cmp-col-good">
+          <div class="cmp-col-svg cmp-col-svg-acc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <div class="cmp-col-title">МСК&#8209;ЭЛЕКТРО</div>
+          <div class="cmp-best-badge">
+            <span class="cbadge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Лучший выбор
+          </div>
+        </div>
+      </div>
+
+      <!-- ROWS -->
+      <div class="cmp-body">
+        <div class="cmp-row" style="--i:0">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span>
+            Фиксированная стоимость
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span class="cmp-val-text">Непредсказуемо</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Чёткая абонплата</span></div>
+        </div>
+        <div class="cmp-row" style="--i:1">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+            Больничные и отпуска
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span class="cmp-val-text">Ваши расходы</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Наши расходы</span></div>
+        </div>
+        <div class="cmp-row" style="--i:2">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+            Поиск замены специалисту
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span class="cmp-val-text">Ваша проблема</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Мы решаем</span></div>
+        </div>
+        <div class="cmp-row" style="--i:3">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3L2 6"/><path d="M22 6l-3-3"/></svg></span>
+            Аварийные выезды 24/7
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span class="cmp-val-text">Не всегда</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Всегда</span></div>
+        </div>
+        <div class="cmp-row" style="--i:4">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            Несколько специалистов
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span class="cmp-val-text">Один человек</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Целая команда</span></div>
+        </div>
+        <div class="cmp-row" style="--i:5">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+            Ведение документации
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></span><span class="cmp-val-text">Частично</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Полностью</span></div>
+        </div>
+        <div class="cmp-row" style="--i:6">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>
+            Налоги и страхвзносы
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span class="cmp-val-text">Ваши расходы</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Не ваша забота</span></div>
+        </div>
+        <div class="cmp-row" style="--i:7">
+          <div class="cmp-param">
+            <span class="cmp-param-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            Соответствие ПТЭЭП
+          </div>
+          <div class="cmp-val bad"><span class="cmp-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></span><span class="cmp-val-text">Под вопросом</span></div>
+          <div class="cmp-val good"><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="cmp-val-text">Гарантировано</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="advantages">
+  <div class="container">
+    <div class="section-line reveal"></div>
+    <div class="sec-label reveal">Почему мы</div>
+    <h2 class="reveal">Ключевые <span class="acc">преимущества</span></h2>
+    <div class="adv-grid reveal-group">
+      <div class="adv-item"><span class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><div class="adv-title">Аутсорсинг выгоднее</div><div class="adv-text">Платите только абонентскую плату. Никаких налогов, больничных и отпускных.</div></div>
+      <div class="adv-item"><span class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div class="adv-title">Снятие ответственности</div><div class="adv-text">Назначаем ответственного за электрохозяйство из наших аттестованных специалистов.</div></div>
+      <div class="adv-item"><span class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><div class="adv-title">Быстрый отклик</div><div class="adv-text">Оперативный выезд на аварию. Работаем по всему Выселковскому району.</div></div>
+      <div class="adv-item"><span class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><div class="adv-title">Порядок в документах</div><div class="adv-text">Вся документация строго в соответствии с ПТЭЭП и законодательством РФ.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGAL -->
+<section id="legal">
+  <div class="container">
+    <div class="legal-grid">
+      <div>
+        <div class="section-line reveal"></div>
+        <div class="sec-label reveal">Нормативная база</div>
+        <h2 class="reveal">Нормативная база — <span class="acc-o">работаем по закону</span></h2>
+        <ul class="legal-list reveal-group">
+          <li><span class="li-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Назначение ответственного за электрохозяйство из числа наших специалистов — согласно п. 1.2.1. ПТЭЭП.</span></li>
+          <li><span class="li-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Эксплуатация электроустановок по договору со специализированной организацией прямо допускается законодательством.</span></li>
+          <li><span class="li-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Наши сотрудники имеют необходимые группы допуска по электробезопасности.</span></li>
+          <li><span class="li-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Деятельность компании соответствует всем нормативным требованиям в сфере электроэнергетики.</span></li>
+        </ul>
+      </div>
+      <div class="legal-card reveal from-right">
+        <strong>⚖️ Важно для руководителей ГБУ</strong>
+        Сотрудничество с ООО «МСК-ЭЛЕКТРО» полностью законно и соответствует всем нормам законодательства РФ. Вы снимаете необходимость содержать штатного электрика, при этом полностью соблюдая требования к безопасной эксплуатации электроустановок.
+        <br/><br/>
+        Мы берём на себя полную техническую ответственность за состояние электрооборудования вашего объекта, регулярно проводим плановые осмотры и оперативно устраняем неисправности.
+        <br/><br/>
+        <strong style="font-size:16px;display:inline;">ИНН: 2360014010 &nbsp;|&nbsp; ОГРН: 1212300058354</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid" style="grid-template-columns:1fr 1.2fr;gap:48px;align-items:stretch;">
+      <div style="display:flex;flex-direction:column;">
+        <div class="section-line reveal"></div>
+        <div class="sec-label reveal">Связаться с нами</div>
+        <h2 class="reveal">Готовы ответить<br/>на все вопросы</h2>
+        <p class="contact-desc">Рассмотрим встречные предложения и заключим договор на взаимовыгодных условиях.</p>
+        <div class="contact-items reveal-group">
+          <div class="ci"><div class="ci-icon">🏢</div><div><div class="ci-label">Компания</div><div class="ci-value">ООО «МСК-ЭЛЕКТРО»</div></div></div>
+          <div class="ci"><div class="ci-icon">👤</div><div><div class="ci-label">Директор</div><div class="ci-value">Лоскутов Дмитрий Николаевич</div></div></div>
+          <div class="ci"><div class="ci-icon">📍</div><div><div class="ci-label">Адрес</div><div class="ci-value">353101, КК, Выселковский р-н,<br/>ст-ца Выселки, ул. Коммунистическая, д. 31, пом. 7</div></div></div>
+          <div class="ci"><div class="ci-icon">📞</div><div><div class="ci-label">Телефон</div><div class="ci-value"><a href="tel:+79649071557">+7 (964) 907-15-57</a></div></div></div>
+          <div class="ci"><div class="ci-icon">✉️</div><div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:msk.electro2021@yandex.ru">msk.electro2021@yandex.ru</a></div></div></div>
+          <div class="ci"><div class="ci-icon">🔢</div><div><div class="ci-label">ИНН / ОГРН</div><div class="ci-value">2360014010 / 1212300058354</div></div></div>
+        </div>
+      </div>
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.35);flex:1;min-height:420px;">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?text=%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%86%D0%B0+%D0%92%D1%8B%D1%81%D0%B5%D0%BB%D0%BA%D0%B8+%D1%83%D0%BB+%D0%9A%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+31&z=16&l=map&pt=38.858,45.3625,pm2rdm"
+          width="100%" height="100%" frameborder="0"
+          style="border:0;display:block;min-height:420px;" allowfullscreen="" loading="lazy"
+          title="МСК-ЭЛЕКТРО на карте"></iframe>
+      </div>
+    </div>
+    <div class="contact-form reveal scale-in" style="margin-top:40px;max-width:580px;margin-left:auto;margin-right:auto;">
+        <div class="modal-logo"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAICAgICAQICAgIDAgIDAwYEAwMDAwcFBQQGCAcJCAgHCAgJCg0LCQoMCggICw8LDA0ODg8OCQsQERAOEQ0ODg7/2wBDAQIDAwMDAwcEBAcOCQgJDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAFAAUADASEAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9+h+lLigAwKMCgBMcUuBQAY6UYoAWigBKMUALRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAmKMUAGBRgZoAMCjFAC0mOKAGjrT6ACkxQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGDrT6ACigAooAKKACkz6UALRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFADB96n0AFFABRQAUUAHWigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg60+gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAYOtPoAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAGDrT6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg+9T6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBo606gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAaMbqdQAUUAFFABRQAUUAFFABRQAUnegBaKAOM1r4jfD7w14gbSfEfjvw7oGqLGsrWepa3b28wRs7WKO4bBwcHGDg1lf8AC5PhF/0VTwf/AOFNaf8Axyu2ODxc4qUacmn2TPPnjsFTk4yqxTXS6D/hcnwi/wCiqeD/APwprT/45Sf8Lk+EX/RVPB//AIU1p/8AHKr6jjf+fUv/AAF/5Ef2jgP+fsfvQf8AC5PhFj/kqng//wAKa0/+OUf8Lk+EP/RVfB//AIU1p/8AHKf1HHf8+pf+Av8AyD+0cB/z+j/4Eg/4XJ8Iv+iqeD//AAprT/45QfjL8IR/zVXwcP8AuZrT/wCOUvqON/59S/8AAX/kP+0cB/z9j96NvQfiB4E8U6w+neGPGugeI79ITM9tpesQXMqxggFysbEhQWUZ6ZI9a66uWpTqUpctSLT7NWO2nVpVoc9OSku61CisjUKKACigAooAKKACigBo606gAooAKKACigAooAKKACigBMfNmloAKgnmhtrKa4uJVhgiQvLI5wqKBkknsABRZvRCbUVdn8uPxn+ISfGf9q7x78UbiOK7tde1Rm0dpUWTy9NhHk2SqSuQrQos23s88nrXmf2Ky/58bb/wHT/Cv66wdBYbCU6K+zFL7kfyZi6zxGKqVn9qTf3sPsVj/wA+Nt/4Dp/hR9isv+fG2/8AAdP8K7jlbD7FZf8APjbf+A6f4UhsbL/nxtv/AAHT/ClYSdgFlZZz9htv/AdP8KsW2kR3uo21lYaKuo39zPHb2lnaWaPNczSOEjijXA3O7sqqMjLMOlJuMU5S2Q4qTlaO7P6Gv2PP2Y7D9nf4BtLq9pYyfFDxEkc/ie9tFDJbhQTFYQvgZih3N82B5kjSSYXcFX7Ar+T80xjzDMKmJf2np6bL8D+q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AJ9DXwd/wUH+MMnw5/Yom8GaNfNaeLPiBM+jW7wuyyW9gF3X84KkFT5J8lXH3ZLiM17mTYb63mtGk9nJX9Fq/wAjw85xH1XK61XqotL1en6n42/Bz4OeOPjp8YrfwT4BsIzcKI5dV1O4Q/YdEtWLAXE+CCR8jiOFSGlZdoKKJJY/6Kfgt8GPBnwJ+Bmn+BfBVq4t42M+o6jdbWu9UumAElzOwABdsAAABUVVRAqKqj9E42zPmlDAU3t70vXov1+4/PuC8t5Yzx01v7sf1f6feetjpRX4+fronOaWgANIOtAC0UAJS0AFIKAFooAKKACigAooAKKACigAooAKKACigAooAKKACigA7V+A3xoufGn7aP8AwVj1fwr8NYk1DTNE36HpN/cKzWOlafbzFb3U5yApCS3KyKqBsziC3CEDe6ffcKezoYqtjqvw0YN/N6I+B4q9pXw1HBUviqzS+SP2W+B3wQ8FfAP4GWfgnwbbvJl/tOr6tdBTeavdlQr3M7KACxCqqqAERFRECqqgex18ZisTUxeInXqfFJ3Z9nhcPTwmHhQp7RVgorkOsKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAEpaAPCP2idd8bWX7OeoeFvhdb/AGn4p+LmOh+GGZisVhLMpE2oTMPuQ20PmTM3cokahnkRWg/Zz/Z78G/s4/s+2PgvwtGLzUZFjk1zW5Ygs+p3CoEDN12xoo2Rx5IRABkksze0sT7HK3h4vWpK8vSOiX33fyPEeH9tmiryWlONl6y1b+6y+Z79RXinth3ooAKKACigAooAKKACigAooAKKACigAooAKO1ADR1p1ABRQAUUAFFABRQAUUAGKTPrQBXa1t31SO9aBGu44nijmK5dEYqWUHsCUQkd9o9BVnvTu2KyQUUhhRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGjrTqACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBo606gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAYOtPoAQ0vagAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg69afQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAMHWn0AFJQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAMHUU+gApBQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGD71PoAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAGDrT6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg607IAoAM0ZoAM0ZoAM0o6UAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAE4FJmgAzRn8KADIozQAZozQAZHrRnigD//2Q==" alt="лого" style="height:90px;"/></div>
+        <div class="cf-head">Закажите обратный звонок</div>
+        <div class="cf-sub">Перезвоним в течение 30 минут в рабочее время</div>
+        <form id="mainForm" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label for="f-name">Ваше имя</label>
+            <input type="text" id="f-name" name="name" placeholder="Иван Иванович"/>
+          </div>
+          <div class="form-group">
+            <label for="f-phone">Телефон <span class="req">*</span></label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+7 (964) 907-15-57" required/>
+          </div>
+          <button type="submit" class="btn btn-acc form-submit">📞 Перезвоните мне</button>
+          <div class="form-ok" id="mainFormOk">✅ Заявка принята! Перезвоним в ближайшее время.</div>
+          <p class="privacy-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+        </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>ООО «МСК-ЭЛЕКТРО»</strong> &nbsp;|&nbsp; ИНН: 2360014010 &nbsp;|&nbsp; ОГРН: 1212300058354 &nbsp;|&nbsp; КПП: 236001001</p>
+  <p style="margin-top:6px;">353101, Краснодарский край, ст-ца Выселки, ул. Коммунистическая, д. 31, пом. 7 &nbsp;|&nbsp; <a href="tel:+79649071557">+7 (964) 907-15-57</a> &nbsp;|&nbsp; <a href="mailto:msk.electro2021@yandex.ru">msk.electro2021@yandex.ru</a></p>
+  <p style="margin-top:6px;font-size:12px;color:#2d3d58;">© 2025 Все права защищены</p>
+</footer>
+
+<!-- FLOATING BTN -->
+<button class="float-phone" onclick="openModal()" title="Заказать звонок">📞</button>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalBox">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-logo"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAICAgICAQICAgIDAgIDAwYEAwMDAwcFBQQGCAcJCAgHCAgJCg0LCQoMCggICw8LDA0ODg8OCQsQERAOEQ0ODg7/2wBDAQIDAwMDAwcEBAcOCQgJDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAFAAUADASEAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9+h+lLigAwKMCgBMcUuBQAY6UYoAWigBKMUALRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAmKMUAGBRgZoAMCjFAC0mOKAGjrT6ACkxQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGDrT6ACigAooAKKACkz6UALRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFADB96n0AFFABRQAUUAHWigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg60+gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAYOtPoAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAGDrT6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg+9T6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBo606gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAaMbqdQAUUAFFABRQAUUAFFABRQAUnegBaKAOM1r4jfD7w14gbSfEfjvw7oGqLGsrWepa3b28wRs7WKO4bBwcHGDg1lf8AC5PhF/0VTwf/AOFNaf8Axyu2ODxc4qUacmn2TPPnjsFTk4yqxTXS6D/hcnwi/wCiqeD/APwprT/45Sf8Lk+EX/RVPB//AIU1p/8AHKr6jjf+fUv/AAF/5Ef2jgP+fsfvQf8AC5PhFj/kqng//wAKa0/+OUf8Lk+EP/RVfB//AIU1p/8AHKf1HHf8+pf+Av8AyD+0cB/z+j/4Eg/4XJ8Iv+iqeD//AAprT/45QfjL8IR/zVXwcP8AuZrT/wCOUvqON/59S/8AAX/kP+0cB/z9j96NvQfiB4E8U6w+neGPGugeI79ITM9tpesQXMqxggFysbEhQWUZ6ZI9a66uWpTqUpctSLT7NWO2nVpVoc9OSku61CisjUKKACigAooAKKACigBo606gAooAKKACigAooAKKACigBMfNmloAKgnmhtrKa4uJVhgiQvLI5wqKBkknsABRZvRCbUVdn8uPxn+ISfGf9q7x78UbiOK7tde1Rm0dpUWTy9NhHk2SqSuQrQos23s88nrXmf2Ky/58bb/wHT/Cv66wdBYbCU6K+zFL7kfyZi6zxGKqVn9qTf3sPsVj/wA+Nt/4Dp/hR9isv+fG2/8AAdP8K7jlbD7FZf8APjbf+A6f4UhsbL/nxtv/AAHT/ClYSdgFlZZz9htv/AdP8KsW2kR3uo21lYaKuo39zPHb2lnaWaPNczSOEjijXA3O7sqqMjLMOlJuMU5S2Q4qTlaO7P6Gv2PP2Y7D9nf4BtLq9pYyfFDxEkc/ie9tFDJbhQTFYQvgZih3N82B5kjSSYXcFX7Ar+T80xjzDMKmJf2np6bL8D+qMswawGAp4frFa+r1f4hRXknrBRQAUUAFFABRQAUUANXvTqACigAooAKKACigAooAKKACigA718V/t8fFJ/hx/wAE+df0rTr02fiXxtOPDWmPHL5csaTozXcqEA4ZLWO4ZT/e2etezlGH+tZpQo95L7k7v8jxc3r/AFXK61XtF/jp+p/P5wAAqhFHCqowFHYCkr+sLn8sdBccUlDAKXvSGABZgAMk9BX60f8ABPb9mMGOw/aL8daejmaNj8PrGZd3lxOpR9VYdA0qsyQdxCzPn98FT4nirHfUsolGL96p7q+e/wCB9pwvgfrmaxcl7sPefy2/E/W+iv5tP6MCigAooAKKACigAooAKKAEHSloAKKACigAooAKKACigBOtLQAZpKAF7V+C3/BQ34ojxz+3WngmwuvO0TwBposZFSUlW1K7Edxckr0ykIs0DckF5RxzX6Bwbh/bZ0pvaEW/0X5nwPGFf2WTuH88kv1/Q+EKXpX9EH8+iUVT2JQUVJW59dfsf/s1S/tBfHaW78SWO/4S+HJkbxK0mQuqTlQ8emL6h1KyTntEVTH78Mn9DMMMNtZxW9vEkEESBI440CqigYCgDgAAYxX8/cZ476zmSw8X7tJW/wC3nq/0R+98HYH6vlzxElrUf4Lb8bkmfSlr84P0UKKACigAooAKKACigAooAQdKWgAooAKKACigAooAKTnNAC0UAJjmloA4r4j+OdG+GfwE8Y/EHxBL5WjeHdHuNSu8AlmWGMvsUDksxAUAdSQK/lo1LWNa8ReKNW8R+JJjP4i1i/n1LVn80uPtNxK00oVjyUV3ZV9FVR2r9m4EoaV67/ux/V/ofjnHFf36FBdnL9F+pTor9iPyIKKACvQPhb8MvFnxj+PGg/DrwXFGdb1Ny0l3OhaDTbVCvn3kwHVIgy/Lkb3eOPK79w5MViIYTDTrz2gm/uOvDUJ4rEQoQ3k0vvP6VfhV8MfCnwd+A3h/4eeDLL7JomlQFRJJgzXczEvNczN/HLLIWkdu7MenSvQv0r+Sa9aeIrSrT3k238z+raFGGHoxow2ikl8haKwOgKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigD8rP+CmXxXn07wT4F+C+k3rwya3M2t+Ikj6PZWzBbaBznjzLlllHqLRx0zX49/rX9H8I4f2GSQl1m3L8bL8EfzrxZiHXzqcekEo/q/wAWJRX3J8SL2pKALdhp+o6tr1hpOj6bda1rF9dR2un6fZR757yeRgkcMYJA3MxAGSFHViFBI/ob/ZM/Zn0r9nn4KvJqCwah8Ttfhhl8U6nE3mJGyA7LK3YgEW8RZ8ZALu0khAL4H5dxtj/Y4OGEi9aju/8ACv8AN/kfpnBmB9tjZYqS0pqy/wAT/wAkfWVFfhB+6BRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAlLQAd6azBVJJwO5PajXoGi3P5kf2iviYfjB+3B8R/H0UvnaTPqR03QmKgY06yLQQEEE5WRvPuFPpc14v3r+tsvofVcBSo/yxS/A/k/HV3icbVrfzSb/ABCivTZ54UcdyAO5JwBQB+wX/BPv9mT+ytHs/wBoLx9pbxazfW7DwNp92uGsrSRdragyH7ss6kiPPzJASflM0ij9VAePSv5h4jx31/N6k0/dj7q9F/m7n9K8OYH6jlNOLXvS95+r/wAlYdRXyh9WJmloAKKACigAooAKKACigAooAQfdFLQAUUAFFABRQAneloAKTHrQAtB6UAJXyx+2f8ULn4U/8E9PHOr6TdG08TazGmg6FKgBeK5vD5JmUE8+TGZZyPSI16eW0PrOYUaP80kvxPLzKv8AVsvrVf5Yv8j+cuGGC2s4ba1iWC1hjWKGJRxGijaqj2AAFSV/Wp/KfQKKACvrP9kL4C6L8af2gpb/AMeTWtr8LvDLRXGsRXd3HEus3LHdDp+GYMYyF8ybjBj2R8iVgviZxip4LLKtaCvJKy9XovzuezlOGhjMxpUZu0W9fRas/f8ATxX4RSJUTxJo8aKAFVdRhAAHQD5uKf8A8Jf4TB/5GfSf/BlF/wDFV/Lf1fEfyS+5n9O/WcNb44/eg/4TDwn/ANDPpP8A4Mov/iqX/hL/AAp/0M+k/wDgyi/+Ko+r4j+R/cw+s4b+dfeie18S+HL7UorOy1/Try7lyI4IL6N3fAJOFDZOACfoK26xlCcHaSs/M2hOFRXg015CY5pag0Ck60ALRQAUUAFFABRQAdqKACigAooAKKACigAooAKKACvxC/4KUfE7/hJf2qfCvwtsZvM0vwZpv9o6ioAKnUr1SsYznIaK1VsjHS9FfdcI0PbZ3CT+wnL8LL8z4bi2v7HJZxW82l+r/I/OSl7V/Rx/PAlFV0I6i9qz73StJ1KSNtS0mx1JowRG13ZxzFAeoG4HGcDp6VJZT/4Rjwv/ANCvo3/gpg/+Io/4Rnwxj/kWNG/8FMH/AMRQAf8ACMeGMf8AIsaN/wCCqD/4irVl4J0nVtcsNK0jwNY63rF/cpa6fp1jokEtxeTucJFEu0bmY9MkADJYqoLCZSjCLlJ2S1fyLipTkox1bP6Bf2Nf2PPDv7OvgB/FOvaRpE3xi1q0CapeafaRiHSLckN/Z9q4UEoCAZZeDK4zhUWKNPuSv5TzbHyzLMKmJezenklovwP6jynARy3L6eHW6Wvq9WFFeKe0FFABRQAUUAFFABRQAUUAFFABRQAneloAKKACkzQAveigDE8SeIdK8J/D7XPFGu3SWOiaRp819f3EhAWKGJDI7HPoqmv5YfFni7VfiD8WPFXxA11Gi1rxPq02rXkUigPAZWzHA2OP3MIigz6RCv2DgShepXrvolH9X+h+RccV7QoUPWX6L9TAor9oPxwKKYgooGFFIA5ygCSSO7rHHHDE0kkjuwRERFBZ3ZmVVRQWZmCqCSBX7mfsUfskN8JfDNv8T/iXpsY+K2pWxFlp0jLIPDdrIOYsglTdSLjzXUkKP3SEqGeX874wzH6pl31eD96rp/26t/v2P0DhLLvreY+3mvdpa/Pp/mfoX29KWv57P6ADNFABSZoAOc+lLQAUUAFFABRQAUUAFFABRQAUUAFFABSUALRQB+c//BSb4njwv+x1pnwysLgLq/j7URb3kalSy6XbFZrssp5KSN5FscDpcn0r8QCSWJJyTySa/obgzD+xyb2j3nJv7tP0P5+4wr+1zhwX2Ipffr+olFfoR8AFFAgopjCmSyxQ2ss88qQQRIXlkkYKqKBksSeAAASTSA/Y/wDYb/ZCHh6DSPjl8VdGePxTJH53hDQL+Aq+jxupAvZ42GVunRiERhmGNiCBI7hf1LxX8w8RZj/aWaTqRfuR92Pouvzep/S3D2X/ANnZZCEl70vel6vp8kLiivlT6oTFLQAUlAC9qKACigAooAKKACigAooAKKACigAooAKKACigD5H+Ov7HXgL9oH4z6f418aeMPFtjdafpK6bY2GkXVpFa28fmNLIyiS3d98jFdxLYIijAA28+O/8ADsv4IdvGvj7/AMGVj/8AIlfd4LivMMBhYYalCPLFWV07/mfC43hXAY7FTxFScuaTvpb/ACF/4dl/BD/odfH3/gysf/kSj/h2X8EM/wDI6+Pv/BlY/wDyJXf/AK75r/JD7n/mcP8AqVln88/vX+Qn/Dsv4If9Dr4+/wDBlY//ACJR/wAOyvgh/wBDt4+/8GVj/wDIlH+u+a/yQ+5/5h/qXln88vvX+Qv/AA7L+CGP+R18ff8Agysf/kSj/h2X8EMf8jp49/8ABlY//IlH+u+bfyQ+5/5i/wBSss/nn96/yD/h2X8D/wDodPH3/gysf/kSuw8A/wDBPf4F+BPjDoPjJr3xL4vuNHuBdWWm+IL23lsftCEGKZ444IzI0bDegYlQ4V9pZEK89fjLNa9GVO0VzJq6Tur9tToo8H5ZRqxqc0nyu9m1Z276H3RS1+en6CFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAhPpXmPxq8Wax4D/Y++KXjbw+1uuu6B4T1DUtPN3AZoRPBbvJHvQMpddyjKhlJHGR1rehBVK8IPZtL73Y5683ToTmt0m/uR8Nfsa/tc/E74wftKav4A+K8mhNJeeGm1jw3JpGiyWBlEFwIbgHfPKHB82PGMYMcnXtwXjX9tj4y2/8AwU6n+H/hWXwxH8KYviXp3hJJLjQZbi7n3TW1veYuRdKocSSXAX90doRSQ3f9KfDuCWbV8Pd+zhT5lrrf19Uz82XEONeVUK+ntJz5XppZeXo0fRP7Q37S3xB0L9qLw7+zp+z74Y07xP8AGDVrMXt7fa1vOn6NbsGZS6qV3NtRnZiwWNTHxI8scbec2Pxz/a++CX7TXgjwt+0T4V8O/EDwX4tvksrXWfh/pV3JNYsWVXkYKCWEZkR3jeNP3QkkSRyhjryMNleWywkKdebWIqxc4/ypatJ+bseric0zKOLnUoRToU5KEv5m9Ltelz1jVfjx8QLT/guB4d+AEEmk/wDCvbvweNVukbTXN8ZzFdsNs/m7Qmbdfl8onk/NWT8Lfjf8b/jx+2n4puvh3B4T0n9m3wf4kk0TUr7Ube4k1bXJIoW8x7WQHy1XzGiYArjyip3szlY+d5bg6eG+sVL8vsoy06zm2kvTS7OlZljKmJ+r07czqyj6Qik389bH3SzBYS7HAUZOBmvzD0z45/toftCfE7xvcfALwl4b+Fvw+8O6k9hbz/EfRry2v9QdRuVmR0DIzoUk8sQ4jSRA0jPvjTgyrD5fONWvjpPkppaR3bbsrenU9DNsRj4OnQwKXPNvV7JJXf3nr/7Mn7TPjLx98cPG/wACfjb4csPCvxo8KIZpTpjFLXVIEMYkdI2dyjJ59u/Dujx3ETqVJeOPwLwj8dP23/i/8f8A4y+HfhFc/C5tJ8FeK7vTHXxJpl1bSrCt7dQW+HjlkErbbY7jtTnGBzge9HK8qw+IxEsS5SowjCUXHdqb0PClmmaYjD4eOGUY1pynGSe14LU9I/Zj/aF+OHj34n/tIeDfixceGJ9b+HenxC3fw7pMkEAuxNfwzAs8zmVA1mm04TIJ45wPHPgP8av+Chn7Qf7Pen/EjwLcfB86HcyeQ0er6Ze2c8cyxo0i7UklBUFwA24Z54HfpqZZkeFnXqV+f2cXT5bPX3431OWnmWd4mnQhQcfaTVS91p7kraH0zqvjz9qT4V/8E5Pjt8RPjI/gRvH3h3S5tR8L/wDCM2881j5UdujEXCSMrM3m+ZwGA27eQc1ymp/tdeK/Cf8AwST+F/xXv9L0vxX8Y/HN3FpGg6RBC9raXt/LcyRgiPezBERC2zzMu2xN67ww8qllmBxsVPDcyjKqoK+6jyczb89GepUzPHYNuGJs5RpOTts5c3KreWqOx123/b8X4J+CP+Ed1D4QzfEB76/fxT9sgvVsI7Y+X9ijtwMt5i/vBKSSpONueK+Xfht8d/2+/ix8UPiV4M8GX/whm8QeCLs2etDU9IvLWBZfPuLceU6zyGVfMtJeSqfLtOPmwO3CYbhqvh6taSqWp6vVbOVo/PucWKxPElCvSpRcL1NFp1Ubv5dj0P41/Hf9q/wx+2X8G/gf8P7v4fR+NPE/gmzuNQTWtHuZbR9X2Xkl1suEnUxwbbNtgMTtnH97AbbftKftT/BT9qX4Z+Dv2oPDPga78L+N9Sj06x1XwaLlfs8kk0VuGDyOd5WW4t98TRp8jl1dijJWlPKsnrYenTi5KtUg5x/l0vo/kiKma5vRxFSo1F0ac1CXfW23zZ2/xq/ac+LGo/tlyfs4fsw+GdF134g2Np9o8Q6/4hLPYaWdkcpjKIy42JNAXlYnDTxIkcrF/L4HV/2i/wBqr9mX4geGbj9qfRvB3i/4X63ffZJPEngmCaKTTSEMjsVc/OURXkMJjBaOKQpIzqImxw+UZZOjTw1WUliaseaP8qurxi/No2xGbZlGtUxNKKeHpS5X3dnaTXoz9N7G9tNS0a01CwuEu7G6hSa3nibKSxsoZWU9wQQRVknFfANNOzPv001dB1paQwooAKKACigAooAKKACigAooAK8N/acXd/wTl+PC5xn4f6uP/JKWuzCf71T/AMUfzRyYv/dan+GX5M/GnwJrlx8HPhV+xj+0XFHNcWNj4i8Y+G9dt7eMeZexveXslrFk8AKgnPPeNaxvD3hTUtI+Cv7Evi3WVjk8Q+PvjZdeJtSnjbIuC+safFFKPaRFMo/661+31GuZ1espTh/4B7R/qj8NpqXKqT2ioT/8D9mv0Z9leHbi38Bf8HPfjuTxhMlkvi7wuU8NXd0wVJDPbaesUSM3GXbTL1AB1aPHVlB+2fi7+0j8Nfgp8RfAXhTxlcajPrni29W10610iyN5LFuljgjkljQ71R5po4lKqxLN0wrFfznH4Otj8Tho0V8VGLXb3Yu/5H6PgMZRwGGxEqz+GrJPv7zVvzPzx/aA8DeJviJ/wcBjwd4R8b3nw817VPhlbR22uWUZZ4gkeou8RwQwSUDy3KMrhSSpBwR7H/wTw+INrp3wl8Wfs4614WsPBfxE+H99ctc2VmjoNSRp3jmnbcBulScFHZcKyPbyKqLKqL7mN5MRw/ClFWlThTm/ON5R1/w3v8zw8E5YfP51ZaxnOpBeUrKX/k2x03wx+OX7a/iP46+ENG+In7Ltr4K8GXt/5euayuoRytYQeVI3mKqXTljvWNcbT9/PaupX4qWP7Y3wK8U+H/2ePi5rfwd8W+HvENqL7Ur3QSl99nUbnxayOjiKU+ZDvfBWSGRSuUxXg18BgcNVWJwsvb0qfK5p6btq223dnu0cfjsTSeFxUfYVanMoNeSvfffsfHn7OOgeKF/4L+axYan8S7r40al4T8LXsPiLxk9gLZZWMdvEtsQrMpCSSeWGDHL28w6xMB7D+wFl/wBqn9s6SMh7dviFNtkHIJ/tTVTX0Oa1ITw2IcIciVGj7va8rpfceBlMJwxGHUp87darr3tGzf3nL/stYT9vD/goPt+YedIfx/tDWa8Z/Yb/AGc/G3xY/wCCffh/xP4c/aV+IXwksY7prM6J4XukS0Z44Yd1wQ3PmPkbj7D612YjF08FTxNSdNVF+4Vpbfw9ziw+FqYyphqcKjpv987rf49vmfZvxq+GmvfCn/gh7+0Z4Y8RfFDxD8WNRl8NardrrviaUPdokkKhYMgkbEKnGMfeP1P552Wi+OPg78CP2V/2pdWmf4s/DLTdQkSDwjqK7E8MSS3D7Ra7SFdpDGWieQEi6ECNlWRocsnxFCvhprkUPbVXGNvsOVNpW/L5m2cYetQxMHzufsaSlK/21Gprf8/kfvb4a8R6J4w+HWheLPDWow6v4e1mwhv9Nvbd90dxBKgeN1PoVYGvzU/YXUD/AIKH/tplf+hlH/p41ivjMDF08vx0JbqMV900fZY6aqZhgpx2cpP74HHftZWfjLU/+C63wK0n4da/beFPH154Yjj0DWr20FxBZThNXd3eMhgwMKTpjaeXH1Hreifse/Gjxx+1P4F+Iv7THxxsviPp3hC7S+0fQ9I0QWqGeOWOaMFgEVY/NhhlfEZkcxIu9UBU/SVMxwWAy/DydJyruk1GV9Em5LbvufOU8vxmPzHERVRRoqqnKNtW0k9/uOB+Aes6f4A/4OA/2lvC3jO6Gla14tYN4de8Oxbz5xdpHGx4JeGbCj+L7HKB/qyB23/BTbxh4d0/9izQPBE92JfFeteJ7O807ToFMty0Fo5lmkEa5ba3ywDj5pJ0QZLAUvZznxFhKkfhcack/KMdfusP2sIcPYunL4lKpFrzctPvufafwQ0HWPC37Gnwn8NeId/9vaV4P02z1ES53rPHaxpID7hgRXqWK/PK8lKvOS2bf5n6Hh4uGHhF7pL8gornOgKKACigAooAKKACigAooAKKACuQ+IPg2w+InwL8Y+AdUvLrT9M8R6LdaVd3ViUFxDHcRNEzxl1Zd4DEjcrDOMgjitKc3TqKa3TT+7UzqQVSnKD2aa+8+br79jD4eX/7BGlfs/S+KfEyeH9N199bstbSWz/tOG4e6luGAY2/k7f38kePKzsOM5+atnxL+yT8PvEfhj9nvRxrWu6Jp/wfltJPDsOnSWyrd/ZmtmRbnfC2QTaJu8vyz8zYI4x9H/buL5r2XxTl85qz/wCAfN/2FheW138MI/KDuvy1Oo+PX7Nvw0/aH8G2Vh43sp7TWdO3/wBkeINLKJf2G8qXRWdWR42KIWjkVkJRWwGVWHkXwW/YR+Fnwi+NUPxF1DxB4i+KPjK0IbSr7xZNBKunybSomjWKJN8oVmVZJC5RSwTZubKw+eY3DZc8FC1ndJ9Unul5MeIyLB4jMVjJXurNro2tmz168/Z58LXn/BQbTP2jJNe1tPFdjog0mPSlkt/7OeIJOgdgYvN34uH6SAcLx1zhTfsteCl/4KGQ/tJaRr+u+HvGTRCPUNO082q6fqQNv9nk89WgMpMiJb7tsgBa1hbgqc88c2xEVayt7P2f/bvf1OiWU0JNvmd/ae0+fb0PpnaMe9fCXxY/YA+E3xH+Meo+OtA8S+JfhPr+pySS6v8A8IlPbxQ3ksrbpZSksTmNpG+aQRlVkb5mUsSxzyzM6+V1nUpJNNWaezRrmeWUM0oqnUbTTumt0d14d/Y4+FHhH9ivxn8F/C9zrGhx+KrBbXXPFltPEut3JX7kglEYjj2chESNY03MVUFiT3H7P37O3gn9nT4cazoPhK+1TWrrV9R+3apq2szRPc3DhAkaYiRI0jjRQFVUHJZjuZmY74jOcZiqFalUt+9kpSfXTZeiMMPk2EwtelVp3/dRcUumu79WZXw7/Zk8IfDb4u/GvxlpHiLXtR1D4mSO+rwX8lsYbLdNdTYt9kKsBuvJB+8Z+FT3J+YNK/4JefCTRtDs9OsPiv8AEyC0tbeOCJI9UsEAVECAkLaAE4UZPWvRw/EeLw9Sc1CL5+W91de6uVfgediOHMLiKUKbnJcvNa3953Z7P4O/Yq8CeD/2ZfjD8LIvHfjTXNE+Itmlrql3qt/bTXViixNF/oxEAReGJ+dXG7n2r0eP9m/wSf8AgnpJ+zfealq2oeEG0iTT01OaSAajEWlaaO5RliEazRSFXRhHgMinBxXBXznE1p83Ko++qmndK33HbRyXDUY8vM37jhr2bv8AedV8FPhLp3wQ+AGnfDnRvEms+JtF0+5nlsJtdeBp7eOWUy+QphjjXy0ZmCDblVIXOAK5P4Qfs4+FPg18b/iv470DxDrusal4+1D7bqdtqsls0Fo/2q6udsAihRgu68kX52c7VTnOS3JPMasnXdkvbb+WvNp8zthl1KKoLmb9jt56W1+Qvi79nHwl4x/bu+Hvx/1DXdbtvFHg+0+z6fpttJbiwnHl3ce6UNEZSdt7L92RRlU44OfoQdBXLiMVUxMKcZL+HHlXpdv9Tqw+Fhhp1Jxf8SXM/WyX6HzR+0D+yn8Lf2irCyuPFcF3oXiyxRYrDxNohiS+iiV94hbzUeOWMMSwWRG2N8yFG5rzT4PfsFfCb4V/Fm28d6zrviH4seLLJ0k0y88XzQSrZSISUmVIok3yJk7GkL+XklApJNe3Rz/HUMveDja1mk+qT3SZ4dbIMFXzBYyV73Ta6NrZs+4u1FfLH1QUUAFFABRQAUUAFFABRQAUUAFFACUUALSHrQACloATPNLQBVvr2003RbvUL+4S0sbWFprmeVtqRRqCzMx7AAE5r8AfFX7fn7Quu/E/xJrfgzxwvh3wbfalLN4f0w6DZytbWOdtvuaWHzC7xqsrhjlXkZeiiv0XhPJ8NmlWrLEx5oxSS6av/gI/POKs2xOW06UcPLllJtv0X/BZhf8ADc37VDLx8UlB/wCxa07/AOM19Pfsv/FD9sj9ov4tvbv8VZtE+HejTofEuuw+GNODE4DCyty0BU3DqQScERIwZhlo1b7bNciyDLMBPEypbLTV6t7L7z4vLM7z3McdDDRq7vXRaLq/uP2DQbY1UknAxk9TUlfgh+7gelJQAtFACc80tACUY5oAWigAooAKKACigAooAKKACigAooAKKACigAooAKKACigD83v+Cjfxrbwd+zpp3we0W4Vdd8fxTpqzBmD22jxALcYIHDTSPFAMkHY8xHKcfiUcs5buTmv6I4NwvsMnVR71G38lovyP594vxPt83dNbU0l893+Z7x+zt+z34u/aL+NzeHNCkl0Twtpjo/inxN5IdNMiYblhiDArJdyLykZBVFPmyArsjm/os8AeAfCnwx+EeieBvBOkRaJ4a0qDyrW2jJZjklnkkc5aSR2LO8jEszMWJJJNfGca5l7bExwMHpDWX+J7fcvzPsODcu9lh5Y2a1npH0W7+b/I7Kivyo/UgooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKjlligtZJppFhhjUs8jsAqADJJJ6ACizeiC6WrP5i/2g/is/xw/bG8a/EqKYzaHeTrY+GxnhNKtiyWzDBIxKWluc9f9Jwfu1P8Bvgf4w+P/wAdYPBvhcGwsYFS41/XZId8Gj2rEjzCDw8r7WEUX8TAk/Ijkf1MqlLJMljKe1KC+btt82fzA4VM5zdxhvUm/uvv8kf0YfC74YeDfg98FtI8BeBNLGl6DYKTlm3z3UzHMlxPJ1kmkbLM56k9gAB6DX8wV61TEVpVqjvKTbfqz+mKFGnh6MaNNWjFJL5BRWBuFFABRQAUUAFGaACigAooAKKACigAooAKKACigAooAKKAE7//AF6BQAtIT/nNAC0UAJ9DXwd/wUH+MMnw5/Yom8GaNfNaeLPiBM+jW7wuyyW9gF3X84KkFT5J8lXH3ZLiM17mTYb63mtGk9nJX9Fq/wAjw85xH1XK61XqotL1en6n42/Bz4OeOPjp8YrfwT4BsIzcKI5dV1O4Q/YdEtWLAXE+CCR8jiOFSGlZdoKKJJY/6Kfgt8GPBnwJ+Bmn+BfBVq4t42M+o6jdbWu9UumAElzOwABdsAAABUVVRAqKqj9E42zPmlDAU3t70vXov1+4/PuC8t5Yzx01v7sf1f6feetjpRX4+fronOaWgANIOtAC0UAJS0AFIKAFooAKKACigAooAKKACigAooAKKACigAooAKKACigA7V+A3xoufGn7aP8AwVj1fwr8NYk1DTNE36HpN/cKzWOlafbzFb3U5yApCS3KyKqBsziC3CEDe6ffcKezoYqtjqvw0YN/N6I+B4q9pXw1HBUviqzS+SP2W+B3wQ8FfAP4GWfgnwbbvJl/tOr6tdBTeavdlQr3M7KACxCqqqAERFRECqqgex18ZisTUxeInXqfFJ3Z9nhcPTwmHhQp7RVgorkOsKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAEpaAPCP2idd8bWX7OeoeFvhdb/AGn4p+LmOh+GGZisVhLMpE2oTMPuQ20PmTM3cokahnkRWg/Zz/Z78G/s4/s+2PgvwtGLzUZFjk1zW5Ygs+p3CoEDN12xoo2Rx5IRABkksze0sT7HK3h4vWpK8vSOiX33fyPEeH9tmiryWlONl6y1b+6y+Z79RXinth3ooAKKACigAooAKKACigAooAKKACigAooAKO1ADR1p1ABRQAUUAFFABRQAUUAGKTPrQBXa1t31SO9aBGu44nijmK5dEYqWUHsCUQkd9o9BVnvTu2KyQUUhhRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGjrTqACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBo606gAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAYOtPoAQ0vagAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg69afQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAMHWn0AFJQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAMHUU+gApBQAtFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAUdqAGD71PoAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKAGDrT6ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBg607IAoAM0ZoAM0ZoAM0o6UAFFABRQAUUAFFABRQAUUAFFABRQAUUAFFABRQAE4FJmgAzRn8KADIozQAZozQAZHrRnigD//2Q==" alt="лого"/></div>
+    <h3>Заказать звонок</h3>
+    <p class="modal-sub">Перезвоним в течение 30 минут</p>
+    <form id="modalForm" onsubmit="submitModal(event)">
+      <div class="form-group">
+        <label>Ваше имя</label>
+        <input type="text" name="name" placeholder="Иван Иванович"/>
+      </div>
+      <div class="form-group">
+        <label>Телефон <span class="req">*</span></label>
+        <input type="tel" name="phone" placeholder="+7 (964) 907-15-57" required/>
+      </div>
+      <button type="submit" class="btn btn-acc form-submit">📞 Отправить заявку</button>
+      <div class="form-ok" id="modalFormOk">✅ Заяв принята! Перезвоним в ближайшее время.</div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
