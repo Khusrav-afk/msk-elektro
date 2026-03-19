@@ -283,7 +283,7 @@ tbody td:last-child{font-weight:600;color:var(--blue2);}
   background:#fff;border-radius:18px;padding:40px 36px;
   box-shadow:0 20px 70px rgba(0,0,0,.3);
 }
-.cf-head{font-family:'Oswald',sans-serif;font-size:26px;color:var(--navy);margin-bottom:6px;}
+.cf-head{font-family:'Oswald',sans-serif;font-size:26px;color:var(--navy);margin-bottom:6px;text-align:center;}
 .cf-sub{font-size:13.5px;color:var(--gray);margin-bottom:28px;}
 .form-group{margin-bottom:18px;}
 .form-group label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px;}
@@ -296,7 +296,7 @@ tbody td:last-child{font-weight:600;color:var(--blue2);}
 }
 .form-group input:focus{border-color:var(--blue2);box-shadow:0 0 0 3px rgba(26,92,212,.1);}
 .form-group input::placeholder{color:#b0bbd4;}
-.form-submit{width:100%;padding:15px;font-size:16px;border-radius:8px;letter-spacing:.5px;}
+.form-submit{width:100%;padding:15px;font-size:16px;border-radius:8px;letter-spacing:.5px;display:flex;justify-content:center;}
 .form-ok{
   display:none;text-align:center;padding:18px;
   color:#1a7a2a;background:#e6f7ec;border-radius:8px;
