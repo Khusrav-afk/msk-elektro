@@ -596,7 +596,7 @@ footer a:hover{color:var(--acc);}
   .hero-cards{flex-direction:column;gap:10px;}
   .hero-card{min-width:auto;}
   section{padding:48px 14px;}
-  .services-grid{grid-template-columns:1fr 1fr;gap:10px;}
+  .services-grid{grid-template-columns:1fr;gap:16px;}
   .card{padding:20px 16px;}
   .adv-grid{grid-template-columns:1fr;}
   .stats-grid{grid-template-columns:1fr 1fr;}
