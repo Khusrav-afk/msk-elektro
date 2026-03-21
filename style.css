@@ -626,7 +626,11 @@ footer a:hover{color:var(--acc);}
   .adv-item{padding:20px 14px;}
 }
 
-/* MOBILE OVERFLOW FIX */
+/* Mobile: cards always show description */
+@media(max-width:768px){
+  .card-desc{max-height:none !important;opacity:1 !important;margin-top:10px !important;overflow:visible !important;}
+  .card{min-height:auto;}
+}
 html, body { max-width: 100%; overflow-x: hidden; }
 *, *::before, *::after { box-sizing: border-box; }
 
