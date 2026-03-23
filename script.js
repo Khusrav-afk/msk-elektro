@@ -1,29 +1,47 @@
 /* ══════════════════════════════════════════
    TELEGRAM BOT — НАСТРОЙКИ
    1. Вставьте токен бота (от @BotFather)
-   2. Вставьте ваш Chat ID (см. инструкцию)
+   2. Добавьте Chat ID всех получателей в массив TG_CHATS
+   Как узнать Chat ID: напишите боту @userinfobot
 ════════════════════════════════════════════ */
-const TG_TOKEN  = '8612202761:AAEv3tNyxsW9QKvumVnNnmVTWw9N8j4zjOQ';   // например: 7412345678:AAFxxxxxxxxxxxxxxxxxxxxxx
-const TG_CHAT   = '1586113448';      // например: 123456789  или  -1001234567890 (группа)
+const TG_TOKEN = '8612202761:AAEv3tNyxsW9QKvumVnNnmVTWw9N8j4zjOQ';
+
+// Добавьте сюда Chat ID всех кто должен получать заявки:
+const TG_CHATS = [
+  '1586113448',   // Получатель 1 (текущий)
+  // '123456789', // Получатель 2 — раскомментируйте и вставьте Chat ID
+  // '987654321', // Получатель 3 — раскомментируйте и вставьте Chat ID
+];
 
 async function sendToTelegram(name, phone, source) {
+  // Номер заявки из timestamp
+  const num = String(Date.now()).slice(-4);
+
+  // Дата и время
+  const now = new Date();
+  const time = now.toLocaleTimeString('ru-RU', {hour:'2-digit', minute:'2-digit'});
+  const date = now.toLocaleDateString('ru-RU', {day:'2-digit', month:'2-digit', year:'numeric'});
+
   const text =
-    `📥 Новая заявка\n` +
+    `📥 Новая заявка #${num}\n` +
     `👤 Имя: ${name || '—'}\n` +
     `📞 Телефон: ${phone}\n` +
+    `🕐 Время: ${time}, ${date}\n` +
     `🖥 Источник: ${source}`;
 
   const url = `https://api.telegram.org/bot${TG_TOKEN}/sendMessage`;
   try {
-    await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: TG_CHAT,
-        text: text,
-        parse_mode: 'HTML'
+    await Promise.all(TG_CHATS.map(chatId =>
+      fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: text,
+          parse_mode: 'HTML'
+        })
       })
-    });
+    ));
   } catch (err) {
     console.error('Ошибка отправки в Telegram:', err);
   }
