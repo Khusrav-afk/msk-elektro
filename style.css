@@ -221,6 +221,7 @@ tbody td:last-child{font-weight:600;color:var(--blue2);}
 
 /* ADVANTAGES */
 #advantages{background:var(--navy);}
+#advantages .section-line{display:none;}
 #advantages .sec-label{color:var(--acc);}
 #advantages h2{color:#fff;}
 #advantages h2 .acc{color:var(--acc);}
