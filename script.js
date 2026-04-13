@@ -8,9 +8,8 @@ const TG_TOKEN = '8612202761:AAEv3tNyxsW9QKvumVnNnmVTWw9N8j4zjOQ';
 
 // Добавьте сюда Chat ID всех кто должен получать заявки:
 const TG_CHATS = [
-  '859042885',   // Получатель 1 (текущий)
-  '-5101553539', // Получатель 2 — раскомментируйте и вставьте Chat ID
-  // '987654321', // Получатель 3 — раскомментируйте и вставьте Chat ID
+  '859042885',        // Владелец (Avenger)
+  '-1003826779583',   // Группа MSK-Electro
 ];
 
 async function sendToTelegram(name, phone, source) {
