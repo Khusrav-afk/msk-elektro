@@ -393,6 +393,13 @@ footer a:hover{color:var(--acc);}
   opacity: 1 !important;
   transform: translate(0,0) scale(1) !important;
 }
+/* Mobile: always show all reveal elements */
+@media(max-width:768px){
+  .reveal, .reveal-group > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 /* Stagger children */
 .reveal-group > * {
   opacity: 0;
