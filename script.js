@@ -124,8 +124,10 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.01 });
 document.querySelectorAll('#stats').forEach(s => observer.observe(s));
 
-// Fallback — run counters after 1 second anyway
-setTimeout(animateCounters, 1000);
+// Fallback — run counters after page load
+window.addEventListener('load', function() {
+  setTimeout(animateCounters, 300);
+});
 
 /* ══ SCROLL REVEAL — runs after DOM is ready ══ */
 document.addEventListener('DOMContentLoaded', function() {
