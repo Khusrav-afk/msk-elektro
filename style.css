@@ -658,3 +658,25 @@ html, body { max-width: 100%; overflow-x: hidden; }
   nav { top: 60px; }
   .header-inner { height: 60px; }
 }
+
+/* ══ GLOBAL REVEAL FIX ══ */
+.reveal,
+.reveal.from-left,
+.reveal.from-right,
+.reveal.from-bottom,
+.reveal.scale-in,
+.reveal-group > * {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* ══ ANIMATIONS for JS-enabled elements ══ */
+.reveal.animated {
+  opacity: 0 !important;
+  transform: translateY(50px) !important;
+  transition: opacity .7s ease, transform .7s ease !important;
+}
+.reveal.animated.from-left  { transform: translateX(-60px) !important; }
+.reveal.animated.from-right { transform: translateX(60px) !important; }
+.reveal.animated.scale-in   { transform: scale(0.88) !important; }
