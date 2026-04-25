@@ -100,7 +100,10 @@ function submitModal(e) {
 }
 
 /* ── ANIMATED COUNTERS ── */
+let countersRan = false;
 function animateCounters() {
+  if (countersRan) return;
+  countersRan = true;
   document.querySelectorAll('.stat-num[data-target]').forEach(el => {
     const target = +el.dataset.target;
     const suffix = el.dataset.suffix || '';
