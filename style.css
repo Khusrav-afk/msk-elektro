@@ -537,7 +537,7 @@ footer a:hover{color:var(--acc);}
   display:flex; align-items:center; justify-content:center; }
 
 /* Staggered row entrance */
-.cmp-row { opacity:0; transform:translateX(-20px);
+.cmp-row { opacity:1; transform:translateX(0);
   transition:opacity .5s ease calc(var(--i,0) * 0.07s), transform .5s ease calc(var(--i,0) * 0.07s); }
 .cmp-wrap.visible .cmp-row { opacity:1; transform:translateX(0); }
 
