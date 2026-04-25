@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  }, { threshold: 0.01, rootMargin: '0px 0px 0px 0px' });
 
   document.querySelectorAll('.reveal, .reveal-group, .section-line').forEach(function(el) {
     revealObserver.observe(el);
