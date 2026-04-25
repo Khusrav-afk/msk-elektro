@@ -658,14 +658,3 @@ html, body { max-width: 100%; overflow-x: hidden; }
   nav { top: 60px; }
   .header-inner { height: 60px; }
 }
-/* ══ GLOBAL REVEAL FIX — show all elements ══ */
-.reveal,
-.reveal.from-left,
-.reveal.from-right,
-.reveal.from-bottom,
-.reveal.scale-in,
-.reveal-group > * {
-  opacity: 1 !important;
-  transform: none !important;
-  transition: none !important;
-}
