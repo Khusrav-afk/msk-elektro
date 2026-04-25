@@ -127,24 +127,26 @@ document.querySelectorAll('#stats').forEach(s => observer.observe(s));
 /* ══ SCROLL REVEAL — runs after DOM is ready ══ */
 document.addEventListener('DOMContentLoaded', function() {
 
+  // Add animated class to enable animations on visible elements
+  document.querySelectorAll('.reveal, .reveal-group, .section-line').forEach(function(el) {
+    el.classList.add('animated');
+  });
+
   function revealOnScroll() {
-    var elements = document.querySelectorAll('.reveal, .reveal-group, .section-line');
+    var elements = document.querySelectorAll('.reveal.animated, .reveal-group.animated, .section-line.animated');
     var windowHeight = window.innerHeight;
     elements.forEach(function(el) {
       var rect = el.getBoundingClientRect();
       if (rect.top < windowHeight * 1.05) {
         el.classList.add('visible');
+        el.classList.remove('animated');
       }
     });
   }
 
-  // Run on scroll
   window.addEventListener('scroll', revealOnScroll, { passive: true });
-
-  // Run immediately and after short delay to catch elements in viewport
   revealOnScroll();
-  setTimeout(revealOnScroll, 100);
-  setTimeout(revealOnScroll, 500);
+  setTimeout(revealOnScroll, 200);
 
   /* Parallax + active nav */
   window.addEventListener('scroll', function() {
