@@ -126,18 +126,25 @@ document.querySelectorAll('#stats').forEach(s => observer.observe(s));
 
 /* ══ SCROLL REVEAL — runs after DOM is ready ══ */
 document.addEventListener('DOMContentLoaded', function() {
-  var revealObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
+
+  function revealOnScroll() {
+    var elements = document.querySelectorAll('.reveal, .reveal-group, .section-line');
+    var windowHeight = window.innerHeight;
+    elements.forEach(function(el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < windowHeight * 1.05) {
+        el.classList.add('visible');
       }
     });
-  }, { threshold: 0.01, rootMargin: '0px 0px 0px 0px' });
+  }
 
-  document.querySelectorAll('.reveal, .reveal-group, .section-line').forEach(function(el) {
-    revealObserver.observe(el);
-  });
+  // Run on scroll
+  window.addEventListener('scroll', revealOnScroll, { passive: true });
+
+  // Run immediately and after short delay to catch elements in viewport
+  revealOnScroll();
+  setTimeout(revealOnScroll, 100);
+  setTimeout(revealOnScroll, 500);
 
   /* Parallax + active nav */
   window.addEventListener('scroll', function() {
